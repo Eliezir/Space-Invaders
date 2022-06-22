@@ -52,8 +52,8 @@ for(var y = 0; y < 3; y++){
 function draw(){
 invaders.forEach(inv => inv.draw(ctx))
 cannon.draw(ctx)
-invaderShot && invaderShot.draw(ctx,m1)
-cannonShot && cannonShot.draw(ctx,m1)
+invaderShot && invaderShot.draw(ctx,purple)
+cannonShot && cannonShot.draw(ctx,red)
 
 }
 
@@ -93,10 +93,10 @@ this.y  += this.dy
 return this.y > 0 && this.y < 600
 }
 
-Shot.prototype.draw = function(ctx,img){
-    ctx.drawImage(img, this.x, this.y, 40, 40)
-   /*  ctx.fillStyle = color;
-    ctx.fillRect(this.x-1,this.y, 3,20) */
+Shot.prototype.draw = function(ctx,color){
+   /* ctx.drawImage(img, this.x, this.y, 40, 40)*/
+    ctx.fillStyle = color;
+    ctx.fillRect(this.x-1,this.y, 3,20) 
 }
 
 function moveCannon(){
