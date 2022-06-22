@@ -1,0 +1,13 @@
+body{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+#cannon, .invader{
+    display:none
+}
+
+#canvas {
+    box-shadow: black 20px 10px 50px;
+}
