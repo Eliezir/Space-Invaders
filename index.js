@@ -52,8 +52,8 @@ for(var y = 0; y < 3; y++){
 function draw(){
 invaders.forEach(inv => inv.draw(ctx))
 cannon.draw(ctx)
-invaderShot && invaderShot.draw(ctx,purple)
-cannonShot && cannonShot.draw(ctx,red)
+invaderShot && invaderShot.draw(ctx,"purple")
+cannonShot && cannonShot.draw(ctx,"red")
 
 }
 
